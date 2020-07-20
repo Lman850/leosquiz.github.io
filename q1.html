@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>First question</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+<p> Please enter your answer clearly, and without punctuation.
+	A hint is at the bottom of the page if you wish.
+</p>
+<form>
+    <label for="answr">Enter your answer: </label>
+    <input type="text" id="answr">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmAnswer = "to promote and encourage amongst young people a practical interest in aviation and the royal air force";
+        var thing = document.getElementById("answr").value;
+				var answer = thing.toLowerCase();
+        if (answer == confirmAnswer) {
+             window.location="second_question.html";
+        }
+        else{
+          alert("Answers do not match.");
+        }
+    }
+</script>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+	To _____ and _______ amongst young people a ________ _________ in _______ and the _____ _____ ______
+</p>
+</body>
+</html>
